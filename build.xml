@@ -19,9 +19,15 @@
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
+    	<mkdir dir="src"/>
+    	<copy includeemptydirs="false" todir="src">
+    		<fileset dir="src">
+    		</fileset>
+    	</copy>
     </target>
     <target name="clean">
         <delete dir="bin"/>
+    	<delete dir="src"/>
     </target>
     <target depends="clean" name="cleanall"/>
     <target depends="build-subprojects,build-project" name="build"/>
