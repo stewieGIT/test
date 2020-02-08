@@ -9,7 +9,6 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
-    <property name="src" location="Workinethor.src"/>
     <path id="Workinethor.classpath">
         <pathelement location="bin"/>
     </path>
@@ -17,7 +16,7 @@
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
-            <fileset dir="src">
+            <fileset dir="Workinethor.src">
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
