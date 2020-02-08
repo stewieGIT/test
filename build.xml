@@ -15,8 +15,6 @@
               	
     <target name="init">
         <mkdir dir="bin"/>
-        <copy includeemptydirs="false" todir="bin">
-        </copy>
     </target>
               	
     <target name="clean">
